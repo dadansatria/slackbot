@@ -13,11 +13,7 @@ def load_driver_settings():
         'test_channel',
         'test_private_channel',
     )
-
-    PLUGINS = [
-        'slackbot.plugins'
-    ]    
-
+    
     _private_group_patch = 'SLACKBOT_TEST_GROUP'
 
     for key in KEYS:
