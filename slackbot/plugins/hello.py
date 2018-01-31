@@ -33,6 +33,11 @@ def hello_reply_formatting(message):
     # Format message with italic style
     message.reply('_hello_ sender!')
 
+@respond_to('hello_lmao')
+def hello_reply_formatting(message):
+    # Format message with italic style
+    message.reply('_hello_ lmao!')    
+
 
 @listen_to('hello$')
 def hello_send(message):
@@ -57,3 +62,7 @@ def hello_unicode_message(message):
 @listen_to('start a thread')
 def start_thread(message):
     message.reply('I started a thread', in_thread=True)
+
+@respond_to('I love you')
+def love(message):
+    message.reply('I love you too!')

@@ -2,6 +2,7 @@ import os
 
 os.environ['SLACKBOT_TEST'] = 'true'
 ALIASES = ",".join(["!", "$"])
+API_TOKEN = "xoxb-307145786230-9kf6Y0HQT3fnB8iqJXSk2LTG"
 
 def load_driver_settings():
     KEYS = (
@@ -12,6 +13,10 @@ def load_driver_settings():
         'test_channel',
         'test_private_channel',
     )
+
+    PLUGINS = [
+        'slackbot.plugins'
+    ]    
 
     _private_group_patch = 'SLACKBOT_TEST_GROUP'
 
